@@ -67,7 +67,8 @@ const RestaurantBooking = () => {
       }
     };
 
-    navigate('/booking-confirmation', { state: { booking: finalBooking } });
+    navigate("/payment", { state: { booking: finalBooking } });
+
   };
 
   const getTableColor = (tableType) => {
