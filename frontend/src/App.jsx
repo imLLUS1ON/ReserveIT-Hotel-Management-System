@@ -10,6 +10,7 @@ import Rooms from './pages/Rooms';
 import Customers from './pages/Customers';
 import Restaurant from './pages/Restaurant';
 import Reservations from './pages/Reservations';
+import PaymentPage from "./pages/PaymentPage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<HotelSelection />} />
         <Route path="/rooms/:hotelId" element={<RoomSelection />} />
         <Route path="/restaurant" element={<RestaurantBooking />} />
+        <Route path="/payment" element={<PaymentPage />} />
         <Route path="/booking-confirmation" element={<BookingConfirmation />} />
         
         {/* Admin routes */}
